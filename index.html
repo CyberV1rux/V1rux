@@ -108,15 +108,50 @@
       margin-bottom: 20px;
       border: 1px solid #333;
       border-radius: 8px;
+      position: relative; /* hareketli arka plan için */
+      overflow: hidden; /* taşan kısımları kes */
+      z-index: 1;
     }
 
     .item h3 {
       color: #f36;
+      position: relative;
+      z-index: 2; /* yazının arka planın üstünde görünmesi için */
     }
 
     .price {
       color: #0f0;
       font-weight: bold;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Wormy W32 arka plan görseli ve animasyon */
+
+    .wormy-w32-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      height: 400px;
+      max-width: 80vw;
+      max-height: 80vw;
+      background: url('https://favpng.com/png_view/computer-computer-worm-computer-virus-trojan-horse-malware-png/RptCFq8Y') no-repeat center center / contain;
+      opacity: 0.12;
+      transform: translate(-50%, -50%);
+      animation: slowRotate 20s linear infinite;
+      pointer-events: none; /* tıklanabilir olmasın */
+      filter: drop-shadow(0 0 20px #ff4444aa);
+      z-index: 0;
+    }
+
+    @keyframes slowRotate {
+      from {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
     }
 
     /* --- Popup Styles --- */
@@ -207,8 +242,9 @@
       <p class="price">Price: 127,500 V1X</p>
     </div>
 
-    <div class="item">
+    <div class="item" style="position: relative;">
       <h3>Wormy W32</h3>
+      <div class="wormy-w32-bg"></div>
       <p>Self-replicating worm designed for LAN-based spread and USB auto-execution attacks.</p>
       <p class="price">Price: 118,900 V1X</p>
     </div>
