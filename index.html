@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>v1rux.xyz | Underground Malware Market</title>
   <style>
-    /* Temel stiller */
     body {
       margin: 0;
       padding: 0;
@@ -16,8 +15,6 @@
       position: relative;
       min-height: 100vh;
     }
-
-    /* Arka plan animasyonları için container */
     .background-animations {
       position: fixed;
       top: 0;
@@ -28,28 +25,24 @@
       overflow: hidden;
       z-index: 0;
     }
-
     .virus-gif {
       position: absolute;
-      width: 80px;
-      height: 80px;
-      opacity: 0.15;
+      width: 100px;
+      height: 100px;
+      opacity: 0.2;
       animation: floatUpDown 8s ease-in-out infinite;
-      filter: drop-shadow(0 0 2px #0ff);
+      filter: drop-shadow(0 0 3px #0ff);
       transition: opacity 0.3s ease, transform 0.3s ease;
     }
-
     .virus-gif:hover {
-      opacity: 0.6;
-      transform: scale(1.3) rotate(15deg);
-      filter: drop-shadow(0 0 8px #0ff);
+      opacity: 0.7;
+      transform: scale(1.4) rotate(20deg);
+      filter: drop-shadow(0 0 10px #0ff);
     }
-
     @keyframes floatUpDown {
       0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
+      50% { transform: translateY(-25px); }
     }
-
     nav {
       background-color: #111;
       padding: 20px;
@@ -60,7 +53,6 @@
       position: relative;
       z-index: 2;
     }
-
     nav a {
       color: #0ff;
       text-decoration: none;
@@ -68,11 +60,9 @@
       letter-spacing: 1px;
       transition: text-shadow 0.3s ease;
     }
-
     nav a:hover {
       text-shadow: 0 0 5px #0ff;
     }
-
     .container {
       max-width: 1000px;
       margin: 50px auto;
@@ -80,7 +70,6 @@
       position: relative;
       z-index: 2;
     }
-
     .item {
       background-color: #111;
       padding: 20px;
@@ -88,11 +77,9 @@
       border: 1px solid #333;
       border-radius: 8px;
     }
-
     .item h3 {
       color: #f36;
     }
-
     .price {
       color: #0f0;
       font-weight: bold;
@@ -100,12 +87,11 @@
   </style>
 </head>
 <body>
-  <!-- Arka plan hareketli virüs GIFleri -->
   <div class="background-animations">
-    <img src="https://i.gifer.com/origin/50/50c5f38aaec5b03b37f33b4acdd6c03c_w200.gif" class="virus-gif" style="top: 10%; left: 5%; animation-delay: 0s;" alt="Virus" />
-    <img src="https://i.gifer.com/origin/ff/ff2b9a536d1b6cb7469751e74808df4d_w200.gif" class="virus-gif" style="top: 50%; left: 20%; animation-delay: 2s;" alt="Virus" />
-    <img src="https://i.gifer.com/origin/18/18d90a6b25801e36d5d5e8d9229a6b50_w200.gif" class="virus-gif" style="top: 70%; left: 70%; animation-delay: 4s;" alt="Virus" />
-    <img src="https://i.gifer.com/origin/7f/7f2c86e1683bdbbb8d2edb83f8e2ec0d_w200.gif" class="virus-gif" style="top: 30%; left: 80%; animation-delay: 1.5s;" alt="Virus" />
+    <img src="https://media.giphy.com/media/3oEjHP8ELRNNlnlLGM/giphy.gif" class="virus-gif" style="top: 10%; left: 5%; animation-delay: 0s;" alt="Worm" />
+    <img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" class="virus-gif" style="top: 50%; left: 25%; animation-delay: 2s;" alt="Trojan" />
+    <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" class="virus-gif" style="top: 70%; left: 70%; animation-delay: 4s;" alt="Bug" />
+    <img src="https://media.giphy.com/media/l4pTey3SsQ2AghBv6/giphy.gif" class="virus-gif" style="top: 30%; left: 80%; animation-delay: 1.5s;" alt="Creepy Worm" />
   </div>
 
   <nav>
