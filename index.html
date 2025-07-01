@@ -173,33 +173,6 @@
       background: #0ff;
       color: #111;
     }
-
-    /* -------- Yeni Eklenen SVG Animasyon için -------- */
-    #floating-svg {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      width: 120px; /* İstersen burayı değiştir */
-      height: auto;
-      opacity: 0.3;
-      animation: floatRotate 30s linear infinite;
-      pointer-events: none;
-      z-index: 10000; /* Popup’dan sonra, ama diğerlerinden önce */
-      filter: drop-shadow(0 0 6px #0ff);
-    }
-
-    @keyframes floatRotate {
-      0% {
-        transform: translate(0, 0) rotate(0deg);
-      }
-      50% {
-        transform: translate(10px, 10px) rotate(180deg);
-      }
-      100% {
-        transform: translate(0, 0) rotate(360deg);
-      }
-    }
-
   </style>
 </head>
 <body>
@@ -210,30 +183,6 @@
 
     <img src="https://media.istockphoto.com/id/1339161613/vector/danger-zone-warning-frames-hud-interface-alarms.webp?s=1024x1024&w=is&k=20&c=DSvDnUEM7-QEo9I_9JzvHSS4UVwOyXhvbbLWS5LtnUc=" 
          alt="Danger Zone Warning" class="floating-image" />
-  </div>
-
-  <!-- BURAYA EKLEDİĞİM SVG -->
-  <div id="floating-svg">
-    <!-- Buraya githubdaki SVG path'leri tam olarak koydum -->
-    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-      width="331pt" height="152pt" viewBox="0 0 331 152" preserveAspectRatio="xMidYMid meet">
-      <g transform="translate(0,152) scale(0.1,-0.1)" fill="#FFFFFF" stroke="none">
-        <!-- Orijinal SVG path'lerini buraya yapıştırdım -->
-        <path d="M325 1423 c-6 -9 -7 -103 -7 -375 l0 -362 193 0 192 0 7 372 c5 308
-          3 374 -11 381 -9 4 -104 7 -193 7 l-175 0 -6 -23z"/>
-        <path d="M822 1425 c-3 -3 -5 -169 -5 -369 l0 -364 202 0 203 0 3 362 2 363 -200
-          4 c-111 3 -203 0 -205 -6z"/>
-        <path d="M1430 1425 c-4 -4 -7 -169 -7 -365 0 -309 1 -358 17 -365 9 -5 92 -8
-          183 -6 l167 3 0 369 0 370 -180 0 c-123 0 -183 -3 -180 -6z"/>
-        <path d="M2070 1423 c-6 -9 -7 -103 -7 -375 l0 -362 193 0 192 0 7 372 c5 308 3
-          374 -11 381 -9 4 -104 7 -193 7 l-175 0 -6 -23z"/>
-        <path d="M2483 1425 c-3 -3 -5 -169 -5 -369 l0 -364 202 0 203 0 3 362 2 363 -200
-          4 c-111 3 -203 0 -205 -6z"/>
-        <path d="M3138 1425 c-4 -4 -7 -169 -7 -365 0 -309 1 -358 17 -365 9 -5 92 -8
-          183 -6 l167 3 0 369 0 370 -180 0 c-123 0 -183 -3 -180 -6z"/>
-        <!-- Buraya tüm SVG path'lerini eklemelisin -->
-      </g>
-    </svg>
   </div>
 
   <nav>
